@@ -13,6 +13,7 @@ public class Number {
         System.out.print("Введите значение: ");
         Scanner sc = new Scanner(System.in);
         value  = sc.nextFloat();
+        sc.close();
         return value;
     }
 

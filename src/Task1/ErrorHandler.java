@@ -6,12 +6,16 @@ public class ErrorHandler {
     public void handler()
     {
         Number num = new Number();
-        try{
-            num.inputData();
-        }catch (InputMismatchException e){
-            System.out.println("Ввод символов недопустим, введите число ");
-            num.inputData();
+        while(true){
+            try{
+                num.inputData();
+                break;
+            }catch (InputMismatchException e) {
+                System.out.println("Ввод символов недопустим, введите число ");
+            }
+
         }
+
         System.out.printf("Вы ввели %f",num.getValue());
 
     }
