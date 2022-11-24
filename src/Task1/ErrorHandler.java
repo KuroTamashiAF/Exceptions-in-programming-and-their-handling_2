@@ -7,6 +7,7 @@ public class ErrorHandler {
             num.inputData();
         }catch (NumberFormatException e){
             System.out.println("Ввод символов недопустим, введите число ");
+            num.inputData();
         }
 
     }
