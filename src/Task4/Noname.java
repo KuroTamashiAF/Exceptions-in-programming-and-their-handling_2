@@ -13,20 +13,12 @@ public class Noname {
     }
 
     public String getData() {
-        return data;
+        return this.data;
     }
     public void inputData()
     {
         Scanner sc  = new Scanner(System.in);
-        this.data = sc.next();
-    }
-
-    public static void main(String[] args) {
-        Noname num = new Noname();
-        Noname num1 = new Noname("jjjjj");
-
-        num1.inputData();
-        System.out.println(num1.getData());
-
+        System.out.println("Введите строку: ");
+        this.data = sc.nextLine();
     }
 }
