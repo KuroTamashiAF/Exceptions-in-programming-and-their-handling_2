@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class Noname {
     private String data;
+    public Noname()
+    {
+        this.data = "";
+    }
+    public Noname(String data) {
+        this.data = data;
+    }
 
     public String getData() {
         return data;
@@ -16,7 +23,10 @@ public class Noname {
 
     public static void main(String[] args) {
         Noname num = new Noname();
-        num.inputData();
-        System.out.println(num.getData());
+        Noname num1 = new Noname("jjjjj");
+
+        num1.inputData();
+        System.out.println(num1.getData());
+
     }
 }
